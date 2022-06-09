@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./tutorial.css">
+    <title>Quiz App</title>
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <div id="quiz-welcome">
+            <h2 id="welcome">JAVASCRIPT QUIZ</h2>
+            <h5 id="rules">
+                // You will begin with 60 seconds
+            </h5>
+            <h5 id="rules">
+                // For every incorrect answer, 10 seconds will be deducted from the clock
+            </h5>
+            <button id="start-quiz">START QUIZ</button>
+        </div>
+        <div id="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+            <h3 id="timer"></h3>
+        </div>
+        <div id="form">
+                <form class="form">
+                    <h4>SAVE SCORE</h4><br>
+                    <label for="finitial">FIRST:</label><br>
+                    <input type="text" id="finitial" name="finitial"><br>
+                    <label for="linitial">LAST:</label><br>
+                    <input type="text" id="linitial" name="linitial"><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </div>
+        <button id="submit">Submit</button>
+
+    </div>
+
+    <script src="./tutorial.js"></script>
+
+</body>
+</html>
